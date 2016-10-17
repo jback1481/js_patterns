@@ -4,7 +4,7 @@
  * 
  * @param options obj The options we pass when constructing the object
  */
-WareHouse.Barrel = function (options) {
+function Barrel (options) {
   
   var obj = {};
   defaults = {

@@ -1,11 +1,12 @@
 /**
- * A traditional constructor class for JS
+ * A warehouse class to store our barrels
  * 
- * Warehouse class to store our barrels
+ * @param options The options object for additional options for the class
+ * @returns {Warehouse.obj}
  */
-Warehouse = function(options, $) {
+function Warehouse (options) {
   
-  var obj = {},
+  var obj = {};
   defaults = {
     capacity : 1000,
     inventory : [],
@@ -19,8 +20,8 @@ Warehouse = function(options, $) {
   };
   
   obj.addToWarehouse = function(item) {
-    addItem(item)
+    addItem(item);
   };
   
   return obj;
-};
+}($);
