@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Traditional class constructor for a Barrel
  * We can put Apples and Watermelons into these!
@@ -7,14 +9,14 @@
 function Barrel (options) {
   
   var obj = {};
-  defaults = {
+  var defaults = {
     capacity : 30,
     height: 4 * 12,
     weight: 0,
     color: 'brown',
     material: 'wood',
     label: ''
-  },
+  };
   
   obj.options = $.extend([], defaults, options);
   obj.contents = [];

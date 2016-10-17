@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * A warehouse class to store our barrels
  * 
@@ -7,7 +9,7 @@
 function Warehouse (options) {
   
   var obj = {};
-  defaults = {
+  var defaults = {
     capacity : 1000,
     inventory : [],
     status : 'open'
